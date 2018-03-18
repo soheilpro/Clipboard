@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <PackageId>Clipboard</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Soheil Rashidi</Authors>
+    <Description>Cross-platform clipboard library for .NET Core.</Description>
+    <Copyright>Copyright 2018 Soheil Rashidi.</Copyright>
+    <RepositoryUrl>https://github.com/soheilpro/Clipboard</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
