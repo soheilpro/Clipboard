@@ -9,5 +9,7 @@ namespace Clipboard.NotSupported
         {
             throw new NotSupportedException();
         }
+
+        public string GetText() => throw new NotSupportedException();
     }
 }

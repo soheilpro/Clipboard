@@ -64,6 +64,8 @@ namespace Clipboard.Windows
             }
         }
 
+        public string GetText() => throw new NotSupportedException();
+
         [DllImport("kernel32.dll", SetLastError = true)]
         private static extern IntPtr GlobalAlloc(uint uFlags, UIntPtr dwBytes);
 

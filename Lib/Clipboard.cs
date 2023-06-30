@@ -27,7 +27,10 @@ namespace Clipboard
             if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
                 return new OSX.Clipboard();
 
-            return new NotSupported.Clipboard();;
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+                return new GnuLinux.Clipboard();
+
+            return new NotSupported.Clipboard();
         }
     }
 }

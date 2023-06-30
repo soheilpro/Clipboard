@@ -24,6 +24,8 @@ namespace Clipboard.OSX
             objc_msgSend(dataType, sel_registerName("release"));
         }
 
+        public string GetText() => throw new NotSupportedException();
+
         [DllImport("/System/Library/Frameworks/AppKit.framework/AppKit")]
         public static extern IntPtr objc_getClass(string className);
 
